@@ -1,0 +1,33 @@
+version: "3"
+
+services:
+  # Serviço que irá rodar o node
+  node:
+    # Imagem base do container
+    image: node:16
+    # Nome do container para facilitar execução
+    container_name: copa_summer
+    # Mesmo que `docker run -t`
+    tty: true
+    # Mesmo que `docker run -i`
+    stdin_open: true
+    # Substitui o comando padrão da imagem do node
+    command: bash
+    # Restarta a imagem caso algo a faça parar
+    restart: always
+    # Diretório padrão de execução
+    working_dir: /copa
+    # Lista de volumes (diretórios) mapeados de fora para dentro do container
+    volumes:
+      # Monta o diretório atual, com todos os dados do projeto, 
+      # dentro do diretório /app
+      - ./:/copa
+    # Lista de portas mapeadas de dentro para fora do container
+    # na notação porta_de_fora:porta_de_dentro
+    ports:
+      # Expõe a porta padrão da aplicação: altere aqui caso use outra porta
+      - 3000:3000
+
+networks:
+  default:
+    name: copa_summer_net
