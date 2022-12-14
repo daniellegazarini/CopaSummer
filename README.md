@@ -6,9 +6,12 @@
 <h3>1 - Crie o endpoint POST `/login`</h3>
 <p><summary>A requisição deve receber um objeto com email e senha que deverá ser validado da seguinte forma: <br>
 
-
+```json
+  {    
     "email": "email@email.com",
     "senha": "123456"
+  }
+```
 
 
   <br> - o campo email é obrigatório. Caso haja erro, retornar <code>status 400</code> e a mensagem "o campo email é obrigatório". <br> - a senha deve possuir pelo menos 6 dígitos. Caso não possua, retornar <code>status 400</code> e a mensagem "a senha precisa conter 6 ou mais dígitos" <br>  Caso seja validada, a req deve retornar o <code>status 200</code> e a mensagem 'Login realizado com sucesso'. </summary><br /></p>
