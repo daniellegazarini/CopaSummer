@@ -37,7 +37,7 @@
     "final": "Croácia",
     "penaltis": true,
     "placar": {
-      "Croácia": 4,
+      "Adversario": 4,
       "Brasil": 2
     }
   }
