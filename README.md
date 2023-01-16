@@ -1,5 +1,5 @@
-<h1>VAMOS COMEÇAR A AVENTURA!:foguete: <s>Hasta la vista, baby</s></h1>
-<h2>Link do Repositório: <h2>
+<h1>COPA SUMMER</h1>
+<h2>O objetivo desse exercício é a construção de uma API capaz de consultar, adicionar, editar e deletar dados de um arquivo JSON. <h2>
 <h1>Requisitos</h1>
 <br>
 <div>
